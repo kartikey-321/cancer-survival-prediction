@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Document</title>
+</head>
+<body>
+    <div class="predict">
+        <div class="text">
+            {% if result==0 %}
+                <h1>Not survived</h1>
+                <img src="../static/images/6-teared-up-sad-yellow-smiley-emoji-cartoon-clipart.jpg" alt="" class="image">
+                
+            {% else %}
+                <h1>Survived</h1>
+                <img src="../static/images/20869-middle.png" alt="" class="image">
+                
+            {% endif %}
+        </div>
+    </div>
+    
+</body>
+</html>

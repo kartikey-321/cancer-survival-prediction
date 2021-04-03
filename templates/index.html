@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Cancer survival prediction</title>
+</head>
+<body>
+    <h1 class="heading">Cancer Survival Prediction</h1>
+    
+    <div class="container">
+        <div class="second">
+            <img src="../static/images/cancer-101-s1-what-is-cancer-cell.jpg" alt="">
+        </div>
+        <form action="/predict" method="POST" class="">
+            <div class="element">
+                <label for="age">age</label>
+                <input type="number" id="age" name="age">
+            </div>
+            
+            <div class="element">
+                <label for="timerecurrence">timerecurrence</label>
+                <input type="text" id="timerecurrence" name="timerecurrence">
+            </div>
+           
+            <div class="element">
+                <label for="chemo">chemo</label>
+                <select name="chemo" id="chemo">
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+            </div>
+            
+            <div class="element">
+                <label for="hormonal">hormonal</label>
+                <select name="hormonal" id="hormonal">
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+            </div>
+            
+            <div class="element">
+                <label for="amputation">amputation</label>
+                <select name="amputation" id="amputation">
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+            </div>
+            
+            <div class="element">
+                <label for="histtype">histtype</label>
+                <input type="number" id="histtype" name="histtype">
+            </div>
+            
+            <div class="element">
+                <label for="diam">diam</label>
+                <input type="number" id="diam" name="diam">
+            </div>
+            
+            <div class="element">
+                <label for="posnodes">posnodes</label>
+                <input type="number" id="posnodes" name="posnodes">
+            </div>
+            
+            <div class="element">
+                <label for="grade">grade</label>
+                <input type="number" id="grade" name="grade">
+            </div>
+            
+            <div class="element">
+                <label for="angioinv">angioinv</label>
+                <input type="number" id="angioinv" name="angioinv">
+            </div>
+            
+            <div class="element">
+                <label for="lymphinfil">lymphinfil</label>
+                <input type="number" id="lymphinfil" name="lymphinfil">
+            </div>
+            
+            <div class="element">
+                <label for="esr1">esr1</label>
+                <input type="text" id="esr1" name="esr1">
+            </div>
+            
+            <button type="submit">Predict</button>
+
+        </form>
+    </div>
+    <!-- <div>
+        {% if result %}
+            {% if result==0 %}
+            <h2>Not survived</h2>
+            {% else %}
+            <h2>Survived</h2>
+            {% endif %}
+        {% endif %}
+    </div> -->
+</body>
+</html>

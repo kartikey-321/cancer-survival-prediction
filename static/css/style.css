@@ -1,0 +1,111 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: rgb(130, 166, 233);
+}
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    padding-top: 40px;
+    text-align: center;
+    flex-wrap: wrap;
+    color: rgb(0, 83, 4);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 70px;
+    height: 100%;
+}
+button{
+    width: 50%;
+    margin-left: 50px;
+    font-size: 30px;
+    margin-top: 20px;
+    border-radius: 15px;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+.element{
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+input{
+    font-size: 25px;
+    border-radius: 15px;
+    text-align: center;
+}
+option,select{
+    font-size: 20px;
+    width: 50%;
+}
+form{
+    padding-top: 50px;
+}
+button:hover{
+    background: black;
+    color: white;
+}
+.predict{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 70px;
+    flex-wrap: wrap;
+    flex-shrink: 10;
+}
+.text{
+    font-size: 30px;
+    padding-top: 20px;
+}
+@media (max-width:640px){
+    .element{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    button{
+        width: 70%;
+    }
+}
+@media (max-width:670px) and (min-width:582px){
+    h1{
+        font-size: 40px;
+        text-align: center;
+    }
+}
+@media (max-width:360px){
+    h1{
+        font-size: 40px;
+        text-align: center;
+    }
+}
+@media (max-width:330px){
+    form{
+        margin-left: 90px;
+    }
+    h1{
+        margin-left: 40px;
+    }
+}
+.image{
+    width: 100%;
+
+}
+h2{
+    text-align: center;
+}
+@media (max-width:857px) and (min-width:580px){
+    h1{
+        font-size: 35px;
+        text-align: center;
+    }
+}
